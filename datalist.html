@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <main>
+      <label for="favLang">Favorite Programming Language </label>
+      <input list="Lang" name="favLang" id="favLang" />
+      <datalist id="Lang">
+         <option value="HTML"></option>
+         <option value="CSS"></option>
+         <option value="Javascript"></option>
+      </datalist>
+      <br>
+      <input type="time" name="happyHour" list="popularHours">
+      <datalist id="popularHours">
+         <option value="08:00"></option>
+         <option value="10:00"></option>
+         <option value="12:00"></option>
+      </datalist>
+      <br>
+      <label for="tick">Tip Amount</label>
+      <input 
+      
+         type="range"
+         name="tick"
+         min="0"
+         max="100"
+         list="tickmarks"
+         id="tick"
+         />
+      <datalist id="tickmarks">
+         <option value="0"></option>
+         <option value="10"></option>
+         <option value="20"></option>
+         <option value="30"></option>
+         <option value="40"></option>
+         <option value="50"></option>
+         <option value="60"></option>
+         <option value="70"></option>
+         <option value="80"></option>
+         <option value="90"></option>
+         <option value="100"></option>
+      </datalist>100
+
+      <br>
+      <label for="color">Favorite Color</label>
+      <input type="color"
+               name="color"
+               id="color"
+               list="refColors"
+               value="#ff0000" />
+      <datalist id="refColors">
+         <!-- <option value="#ff0000"></option>
+         <option value="#00ff00"></option>
+         <option value="#0000ff"></option> -->
+      </datalist>
+
+      <br><br>
+      <!-- progress meter -->
+      <label for="file">File Progress: </label>
+      <progress> class="file" max="100" value="30"</progress>
+      <br>
+      <br>
+      <!-- Meter -->
+       <label for="fuel">Fuel:</label>
+       <meter value="66" 
+               class="fuel" 
+               min="0" 
+               max="100" 
+               low="30" 
+               high="80"
+               optimum="90">
+      </meter>
+      <br/>
+
+      <figure>
+      <video 
+      width="400"
+      src="./video1.mp4" 
+      type="video/mp4"
+      muted
+      controls >
+      </video>
+      <figcaption>Video 1 : card play</figcaption>
+      </figure>
+
+      <iframe 
+      src="https://www.youtube.com/embed/watch?v=trUIgTfKjo0"
+      frameborder="0"
+      width="560"
+      height="315"
+      ></iframe>
+
+      <br>
+      <iframe 
+      src="./pdf1.pdf" 
+      type="application/pdf"
+      width="50%"
+      height="600px">
+
+      </iframe>
+
+      <br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24487.12415465921!2d130.4100899241861!3d33.58860432917349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2shk!4v1753148665105!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <br>
+      <img src="./image/computer.jpg" alt="" usemap="#computermap" />
+      <map name="computermap">
+         <area shape="rect" 
+         coords="34,44,270,350" 
+         href="https://www.apple.com" 
+         alt="" 
+         />
+         <area shape="circle" 
+         coords="337,300,45" 
+         href="https://www.google.com" 
+         alt="" 
+         />
+      </map>
+   </main>
+</body>
+</html>

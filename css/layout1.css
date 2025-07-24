@@ -1,0 +1,42 @@
+body, html{
+   padding:0;
+   margin: 0;
+}
+body{
+   height: 95%vh;
+   border: solid blue;
+   font-size: 16px;
+}
+*{
+   box-sizing: border-box;
+}
+
+img{
+   /* the image must be inside a container to effectively controlled */
+   max-width: 100%;
+}
+
+.container{
+   /* this width 80% is with respect to the screen size 
+      can also use 80vw */
+   /* width: 80%; */
+   width: 80vw;
+   /*max-width control the max size of the container */
+   max-width: 1100px;
+   /* min-width control the minimum width size*/
+   min-width: 600px;
+   margin: 5% auto;
+   border: red solid;
+}
+
+h1{
+   font-size: 2rem;
+   /* can use vw so that the letter will grow and shrink*/
+   /* font-size: 2vw; */
+}
+p{
+   font-size: 1.5rem;
+}
+ul{
+   font-size: 1.5rem;
+}

@@ -1,0 +1,106 @@
+* {
+   /* border: 1px solid red; */
+   letter-spacing: 1px;
+   word-spacing: 3px;
+}
+
+
+/* element selector */
+p {
+   color: green;
+
+}
+
+/* id selector */
+#heading {
+   color: rgba(250, 128, 114, 0.716);
+}
+
+#unique-box {
+   border: 2px solid rgb(90, 35, 35);
+}
+.simply {
+   color: red;
+}
+
+.box {
+   background-color: #f99
+}
+
+.inner-box {
+   border: 1px solid white;
+}
+
+/* attribute selector */
+[type="text"] {
+   border:2px solid red;
+}
+
+/* descendant silbing*/
+/* element */
+ul li {
+   color: peru;
+}
+/*  class */
+ul.list li.highlight {
+   color : red;
+}
+
+/* direct child */
+ul.list > li {
+   color: green;
+}
+
+/* div direct child */
+div > h2 {
+   color: purple;
+}
+
+/*class */
+.box > .child {
+   color: blue;
+}
+
+.inner-box.first-box {
+   border: 3px solid cyan;
+}
+
+/*multiple elements */
+h5, h6{
+   color : cyan;
+}
+
+/*multiple classes*/
+.multiple1, 
+.multiple2 {
+   color: rgb(133, 18, 29)
+}
+
+/*adjacent sibling selector */
+div + a{
+   color: gold;
+}
+
+/*adjacent sibling selector */
+.link + .box-sibling {
+   background-color: lightcoral;
+}
+
+.box ~ .general-sibling {
+   color: gold;
+   font: italic;
+}
+
+h1 ~ h4 {
+   color: brown;
+}
+
+.pseudo-class-link:hover {
+   color: red;
+   text-decoration: dashed;
+}
+
+/* p first line will be affected */
+p::first-line {
+   background-color: black;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./selector.css">
+   </head>
+   <body>
+      <!-- id selector -->
+      <h1 id="heading">ID selector to blue</h1>
+      <div class="box" id="unique-box">
+      <!-- direct child selector -->
+       <h2>element direct child</h2>
+       <h3 class="child">ClaSS DIRECT CHILD</h3>
+       <span><h2>element not direct child</h2></span>
+       <span><h3 class="child">class not direct child</h3></span>
+       <!-- element selector -->
+        <p>p element selector change color to green</p>
+       <!-- simple class selector -->
+        <p class="simply">simply class selector to red </p>
+      
+         <!-- Class selector -->
+          <div class="inner-box first-box">Multiple classes</div>
+          <div class="inner-box">inner Box 2</div>
+         <!-- child selector descendant-->
+           <ul class="list">
+            <li>ul li - element Descendant all levels</li>
+            <li class="hightlight">
+                  ul.list li.highlight - class Descendant all levels
+            </li>
+           </ul>
+           <li class="highlight">ul.list li.highlight - class descendant</li>
+         </ul>
+         <!-- attribute selector -->
+            <input type="text" placeholder="attribute selector" />
+            <a href="#" class="link" title="link Title">Link with title</a>
+
+         <!-- class direct sibling selector -->
+             <div class="box-sibling">class direct Sibling</div>
+            <a href="#">element direct Sibling</a>
+         <!-- Pseudo class selector -->
+           <a href="#" class="pseudo-class-link">pseudo-class selector</a>
+         </div>
+         <!-- general sibling selector -->
+          <p class="general-sibling">class general sibling</p>
+          <h4>element general sibling</h4>
+          <h5>multiple element selection</h5>
+          <h6>multiple element selection</h6>
+          <p class="multiple1">multiple class selection</p>
+          <p class="multiple2">multiple class selection Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae iusto officia aut blanditiis architecto quaerat dicta nesciunt, mollitia libero consequatur. Expedita itaque ratione facere ipsum saepe vel laborum deserunt iste!</p>
+         
+   </body>
+</html>

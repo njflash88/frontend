@@ -1,0 +1,81 @@
+html, body {
+   margin: 0;
+   padding: 0;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   line-height: 2;
+}
+
+.container {
+   max-width: 600px;
+   margin: 30px auto;
+   padding: 2rem;
+}
+
+.container > p {
+   font-weight: bold;
+   color : rgb(98, 0, 255);
+}
+.container > ul {
+   list-style: none;
+}
+.container > a {
+   color: green;
+}
+
+ /* immediate sibling of h  */
+.container h1 + a {
+   color: cyan;
+   font-weight: bold;
+}
+
+/* sibling after h1 */
+.container h1 ~ a {
+   color: coral;
+}
+
+/* all sibling div to the direct ul children of the container */
+.container > ul ~ div + a {
+   background-color: lightblue;
+}
+
+ul li:first-child {
+   background-color: cornflowerblue;
+}
+ul li:last-child {
+   background-color: rgb(237, 100, 173);
+}
+
+/* ul li:nth-child(odd){
+   background-color: yellow;
+} */
+
+/* ul li:nth-last-child(2) {
+   background-color: teal;
+} */
+
+/* ul li:nth-child(even){
+   background-color : red;
+} */
+
+ul li:nth-child(8){
+   background-color: rgb(0, 157, 255);
+}
+ul li:nth-child(5n){
+   background-color: gold;
+}
+
+.container h2 a:only-child {
+   background-color: aquamarine;
+}
+
+/* select the container class that have only 1 div */
+.container div:only-of-type {
+   background-color: salmon;
+}

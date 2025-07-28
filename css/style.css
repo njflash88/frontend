@@ -10,16 +10,20 @@ margin: 0px;
 main {
   background-color: #F8F9FB;
   padding: 20px;
-  /* border: solid red; */
 }
 
 .container {
   display: flex;
   text-align: center;
+  justify-content: center;
+  height: 100vh;
   padding: 20px;
   border-radius: 8px;;
-  /* border: solid red; */
   background-color: rgb(210, 210, 167);
+}
+plan{
+  flex: 1;
+  max-width: 400px;
 }
 a{
   display: block;
@@ -43,7 +47,6 @@ section {
   /* box-shadow: 5px 5px 5px rgb(176, 170, 170);  */
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
-  /* border: solid red; */
 }
 /* a{ font-size: larger;} */
 
@@ -71,19 +74,17 @@ p{
   line-height: 1.5x;
   height: 5em;
   overflow: auto;
-  /* border: solid red; */
 }
-ul{
+ul {
   list-style-type:none;
   text-align: left;
-  /* border: solid red; */
 }
+
 button{
   margin: 20px 1px;
   text-transform: uppercase;
   width: 90%;
   padding: 12px;
-  /* border: solid red; */
 }
 #pro {
   background-color: black;
@@ -151,25 +152,26 @@ item{
   width: 100%;
   margin: 30px auto;
   padding: 20px;
-  /* border:1px solid red; */
 }
-@container item (max-width: 577px) {
+
+@media (max-width: 850px) {
   .container{
-    padding:0;
+    flex-direction: column;
+    height: 100%;
   }
-  .item1{
+  /* .item1{ */
     /* display: block; */
   /* background-color: rgb(188, 173, 230); */
-  width: 100%;
-  }
-  .item2{
+  /* width: 100%;
+  } */
+  /* .item2{ */
     /* display: block; */
     /* background-color: rgb(188, 173, 230); */
-    width: 100%;
-    }
-  .item3{
+    /* width: 100%;
+    } */
+  /* .item3{
     width: 100%;
     /* display: block; */
     /* background-color: rgb(188, 173, 230); */
-    }
+    /* } */ 
 }

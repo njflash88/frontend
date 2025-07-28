@@ -1,0 +1,77 @@
+* *::before *::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+   border-color: red solid;
+   max-width: 1100px;
+   display: flex;
+   margin: 0 auto;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   position: relative;
+}
+.hero{
+   background: url(../image/background.jpg) center/cover no-repeat;
+   color: #fff;
+   position: center;
+   text-align: center;
+   p{ 
+      font-size: 1.5rem;
+      padding: 1rem;;
+   }
+}
+.hero h1{
+   font-size: 3rem;
+   padding: 1rem
+}
+
+.hero::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0,0,0,0.5);
+}
+
+.hero .btn{
+   text-decoration: none;
+   color:#fff;
+   padding: 1rem 2rem;
+   background: #333;
+   border: 1px solid white;
+   border-radius: 5px;
+   cursor: pointer;
+   opacity: 0.9;
+}
+
+.hero .btn:hover{
+   opacity: 0.7;
+}
+
+@media (max-width:576px) {
+   .hero{
+      background: url();
+      background-color: aquamarine;
+   }
+   .hero h1{
+      font-size: 2rem;
+      line-height: 1.3;
+   }
+   .hero p{
+      font-size: 1.25rem;
+   }
+   .hero btn{
+      font-size: 1rem;
+   }
+}

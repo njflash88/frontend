@@ -1,0 +1,39 @@
+html, body{
+   border: 0;
+   margin: 0;
+}
+
+body{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*{box-sizing: border-box;}
+
+.container{
+   margin: 3px;
+   max-width: 1100px ;
+}
+
+.box{
+   width: 100px;
+   height: 100px;
+   background: coral;
+   animation: animatel 3s;
+   animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-out;
+   position: absolute;
+}
+
+@keyframes animatel {
+   from {
+      width: 100px;
+      background: coral;
+      top: 0;
+   }
+   to {
+      width: 500px;
+      background: cyan;
+      top: 50vh;
+   }
+}
